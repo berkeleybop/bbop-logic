@@ -1,0 +1,61 @@
+{
+    "name": "bbop-logic",
+    "version": "0.0.1",
+    "license": "BSD-3-Clause",
+    "description": "BBOP object to try and take some of the pain out of managing the boolean logic that seems to show up periodically.",
+    "keywords": [
+        "node",
+        "npm",
+        "client",
+        "server",
+        "Gene Ontology",
+        "GO",
+        "bbop",
+        "Berkeley BOP",
+        "AmiGO",
+	"boolean",
+	"logic"
+    ],
+    "author": "SJC <sjcarbon@lbl.gov> (http://berkeleybop.org/)",
+    "homepage": "http://berkeleybop.org/",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/berkeleybop/bbop-logic.git"
+    },
+    "engines": {
+        "node": ">= 0.12.2",
+        "npm": ">= 2.7.4"
+    },
+    "dependencies": {
+        "bbop-core": "0.0.5",
+        "underscore": "1.8.3"
+    },
+    "devDependencies": {
+        "chai": "^2.3.0",
+        "del": "^1.1.1",
+        "gulp": "^3.8.11",
+        "gulp-bump": "^0.3.0",
+        "gulp-git": "^1.2.3",
+        "gulp-jsdoc": "^0.1.4",
+        "gulp-mocha": "^2.0.1",
+        "gulp-pandoc": "^0.2.1",
+        "gulp-rename": "^1.2.2",
+        "gulp-shell": "^0.4.2",
+        "gulp-uglify": "^1.2.0",
+        "jsdoc": "^3.3.0",
+        "jsdoc-baseline": "git://github.com/hegemonic/jsdoc-baseline.git#74d1dc8075"
+    },
+    "bundleDependencies": [],
+    "private": false,
+    "directories": {
+        "test": "tests"
+    },
+    "main": "lib/logic.js",
+    "bugs": {
+        "url": "https://github.com/berkeleybop/bbop-logic/issues"
+    },
+    "scripts": {
+        "update-docs": "git checkout gh-pages && git pull && git merge master && gulp doc && git commit -a -m 'bump docs' && git push && git checkout master",
+        "test": "gulp test"
+    }
+}
