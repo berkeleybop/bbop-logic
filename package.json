@@ -1,6 +1,6 @@
 {
     "name": "bbop-logic",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "license": "BSD-3-Clause",
     "description": "BBOP object to try and take some of the pain out of managing the boolean logic that seems to show up periodically.",
     "keywords": [
@@ -13,8 +13,8 @@
         "bbop",
         "Berkeley BOP",
         "AmiGO",
-	"boolean",
-	"logic"
+        "boolean",
+        "logic"
     ],
     "author": "SJC <sjcarbon@lbl.gov> (http://berkeleybop.org/)",
     "homepage": "http://berkeleybop.org/",
